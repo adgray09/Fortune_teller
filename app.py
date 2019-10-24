@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Renders the home page with links to Fortune and Weather."""
+    """Renders the home page with links to Fortune and Water."""
     return render_template('index.html')
 
 
@@ -17,9 +17,3 @@ def fortune_results():
     if users_gender == 'male':
         print("you are a man")
     return render_template('fortune_results.html')
-        
-        
-        
-        
-        
-        
