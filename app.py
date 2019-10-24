@@ -16,10 +16,9 @@ def fortune_results():
 
     if users_gender == 'male':
         print("you are a man")
-    return render_template('fortune_results.html')
         
         
-        
+        asdfsdfasdfsdf
         
         
         
