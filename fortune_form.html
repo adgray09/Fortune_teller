@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+<body>
+<h1>Welcome to IFortune!</h1>
+<h3>fill out the form below to determine your fortune</h3>
+
+
+<form></form>
+
+<form action="fortune_results">
+    <h3>select your gender:</h3>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br>
+</form>
+
+<form action="/results" methods='POST'>
+    <h3>select a beverage</h3>
+    <select>
+        <option>coffee</option>
+        <option>tea</option>
+        <option>water</option>
+        <option>orange juice</option>
+        <option>sparkling water</option>
+    </select>
+</form>
+
+<form action="fortune_results">
+    <h3>Out of all these cities. Which one is your favorite?</h3>
+    <input type="checkbox" name="city" value="chicago"> Chicago<br>
+    <input type="checkbox" name="city" value="san francisco"> San francisco<br>
+    <input type="checkbox" name="city" value="louisville"> Louisville<br>
+    <input type="checkbox" name="city" value="new york"> New York<br>
+</form>
+
+
+<form action="/fortune_results" methods='GET'>
+    <input type='submit' value='Submit!'>
+</form>
+
+</body>
