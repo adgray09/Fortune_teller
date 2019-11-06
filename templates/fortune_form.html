@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 
-<head>
-</head>
 
-<body>
-<h1>Welcome to IFortune!</h1>
-<h3>Fill out the form below to determine your fortune</h3>
+<body style="background-image: linear-gradient(to right, red,indigo)">
+    <div class="wrapper">
 
-<form action="fortune_results" method="GET">
+        <h1>Welcome to IFortune!</h1>
+        <h3>Fill out the form below to determine your fortune</h3>
+        
+        <form action="/fortune_results" method="GET">
+            
+            Please enter your first name: <input type="text" name="name"><br>
+            
+            <h3>Select your gender:</h3>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            
+            <h3>Select a beverage</h3>
+            <select name="drink">
+                <option value="coffee">coffee</option>
+                <option value="tea">tea</option>
+                <option value="water">water</option>
+                <option value="orange juice">orange juice</option>
+                <option value="sparkling water">sparkling water</option>
+            </select>
+            
+            <h3>Out of all these cities. Which one is your favorite?</h3>
+            <input type="checkbox" name="city" value="chicago"> Chicago<br>
+            <input type="checkbox" name="city" value="san francisco"> San francisco<br>
+            <input type="checkbox" name="city" value="louisville"> Louisville<br>
+            <input type="checkbox" name="city" value="new york"> New York<br>
+            
+            
+            <input type='submit' value='Submit'>
+        </form>
+        
+    </body>
 
-Please enter your first name: <input type="text" name="name"><br>
-
-<h3>Select your gender:</h3>
-    <input type="radio" name="gender" value="male"> Male<br>
-    <input type="radio" name="gender" value="female"> Female<br>
-    <input type="radio" name="gender" value="other"> Other<br>
-
-<h3>Select a beverage</h3>
-    <select>
-        <option>coffee</option>
-        <option>tea</option>
-        <option>water</option>
-        <option>orange juice</option>
-        <option>sparkling water</option>
-    </select>
-
-<h3>Out of all these cities. Which one is your favorite?</h3>
-    <input type="checkbox" name="city" value="chicago"> Chicago<br>
-    <input type="checkbox" name="city" value="san francisco"> San francisco<br>
-    <input type="checkbox" name="city" value="louisville"> Louisville<br>
-    <input type="checkbox" name="city" value="new york"> New York<br>
     
-
-<input type='submit' value='Submit'>
-</form>
-
-</body>
-
-
-
+    
+    

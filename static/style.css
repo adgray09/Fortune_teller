@@ -1,0 +1,19 @@
+.button {
+    background-color: #000000;
+    color: #FFFFFF;
+    float: none;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+div.a {
+    text-align: center;
+}
+
+.wrapper {
+    width:100%;
+    height: 100%;
+    background: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+}
