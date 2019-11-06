@@ -4,7 +4,8 @@
 <head>
   <meta charset='utf-8'>
   <title>fortune</title>
-  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body style="background-image: linear-gradient(to right, red,indigo)">
     {% block content %}

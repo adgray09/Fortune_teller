@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-
+<head>
+    <!-- LINKING CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- BOOTSTRAP THEME-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css">
+</head>
 
 <body style="background-image: linear-gradient(to right, red,indigo)">
-    <div class="wrapper">
-
+    <!-- LOGO -->
+    <div class="logo-img">
+        <img src=data:image/png;base64,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 width='200'>
+    </div>
+    <!-- PAGE HEADER-->
+    <div style="text-align: center;"> 
         <h1>Welcome to IFortune!</h1>
         <h3>Fill out the form below to determine your fortune</h3>
-        
-        <form action="/fortune_results" method="GET">
-            
-            Please enter your first name: <input type="text" name="name"><br>
-            
-            <h3>Select your gender:</h3>
+    <!-- QUESTIONS -->        
+    <form action="/fortune_results" method="GET">
+        Please enter your name: <input placeholder="enter name" type="text" name="name" ><br>
+        <h3>Select your gender:</h3>
             <input type="radio" name="gender" value="male"> Male<br>
             <input type="radio" name="gender" value="female"> Female<br>
             <input type="radio" name="gender" value="other"> Other<br>
-            
-            <h3>Select a beverage</h3>
-            <select name="drink">
-                <option value="coffee">coffee</option>
-                <option value="tea">tea</option>
-                <option value="water">water</option>
-                <option value="orange juice">orange juice</option>
-                <option value="sparkling water">sparkling water</option>
-            </select>
-            
-            <h3>Out of all these cities. Which one is your favorite?</h3>
-            <input type="checkbox" name="city" value="chicago"> Chicago<br>
-            <input type="checkbox" name="city" value="san francisco"> San francisco<br>
-            <input type="checkbox" name="city" value="louisville"> Louisville<br>
-            <input type="checkbox" name="city" value="new york"> New York<br>
-            
-            
-            <input type='submit' value='Submit'>
-        </form>
+                    
+        <h3>Select your favorite beverage out of the options</h3>
+        <select name="drink" size="1">
+            <option value="coffee">coffee</option>
+            <option value="tea">tea</option>
+            <option value="water">water</option>
+            <option value="orange juice">orange juice</option>
+            <option value="sparkling water">sparkling water</option>
+        </select>
+                    
+        <h3>Out of all these cities. Which one is your favorite?</h3>
+        <input id="check1" type="checkbox" name="city" value="chicago"> Chicago<br>
+        <input id="check2" type="checkbox" name="city" value="san francisco"> San francisco<br>
+        <input type="checkbox" name="city" value="louisville"> Louisville<br>
+        <input type="checkbox" name="city" value="new york"> New York<br>
+        <input type='submit' value='Submit'>
+    </div>
+    </form>
+</body>
         
-    </body>
-
+        
     
     
     
