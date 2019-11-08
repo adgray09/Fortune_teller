@@ -8,3 +8,13 @@
   
 3. What are the values of the URL query string? How do they correspond to what the user entered or typed?
   the values of the query string are correspond to what the user decided. given the options
+
+
+1.Describe the data contained in the API response. What can we discern about the weather in the specified city?
+
+we are given a lot of information including the humidity levels, weather, rain, clouds, coordinates.
+
+2. How would we obtain the temperature in the specified city? Describe using Python dictionary syntax. (HINT: Assume that the JSON response is stored in a variable called json_response.)
+
+we would get the info by calling whatever the dictonary is called and putting in a name value for the city then going to the "stations" category is where we would find the temperature
+
