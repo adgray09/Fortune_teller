@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <!-- BOOSTRAP THEME-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css">
-<div style="text-align: center;">
-    <h1>Your Fortune</h1>
-</div>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	<!-- BOOSTRAP THEME-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sketchy/bootstrap.min.css">
+	<div style="text-align: center; color: white">
+		<h1>Your Fortune</h1>
+	</div>
 </head>
-<body style="background-image: linear-gradient(to right, red,indigo)">
-    Hello, {{ name }}
-</div>
-<div>
-    Your fortune is: {{ fortune }}
-</div>
-    
+
+<body style="background-image: linear-gradient(to right, red,black);text-align: center; color: white">Hello, {{ name }}
+	<div>Your fortune is: {{ fortune }}</div>
 </body>
