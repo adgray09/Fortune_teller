@@ -99,7 +99,8 @@ def weather_results_page():
     temp_in_kelvin = main_data["temp"]
     temp_in_celsius = (temp_in_kelvin - 273.15)
     temp_in_celsius = int(round(temp_in_celsius))
-    return render_template("weather_results.html", city=users_city, temp=temp_in_celsius, humidity=city_humidity)
+    temp_in_farenheit = (temp_in_celsius * (9/5)) + 32
+    return render_template("weather_results.html", city=users_city, temp=temp_in_farenheit, humidity=city_humidity)
 
 
     
